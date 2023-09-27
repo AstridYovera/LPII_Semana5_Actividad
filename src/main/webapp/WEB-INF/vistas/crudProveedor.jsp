@@ -419,10 +419,14 @@
 							message : 'El nombre es de 5 a 100 caracteres',
 							min : 5,
 							max : 100
-						}
-					}
-				},
-				"dni" : {
+						},
+						remote :{
+		            	    delay: 1000,
+		            	 	url: 'buscaPorNombreOrDniProveedor',
+		            	 	message: 'El Nombre ya existe'
+		             	}
+		            }
+		        },				"dni" : {
 					selector : "#id_reg_dni",
 					validators : {
 						notEmpty : {
@@ -431,9 +435,14 @@
 						regexp : {
 							regexp : /^[0-9]{8}$/,
 							message : 'el dni es 8 dígitos'
-						}
-					}
-				},
+						},
+						remote :{
+		            	    delay: 1000,
+		            	 	url: 'buscaPorNombreOrDniProveedor',
+		            	 	message: 'El DNI ya existe'
+		             	}
+		            }
+		        },
 				"tipo.idTipo" : {
 					selector : '#id_reg_tipo',
 					validators : {
@@ -474,9 +483,14 @@
 							message : 'El nombre es de 5 a 100 caracteres',
 							min : 5,
 							max : 100
-						}
-					}
-				},
+						},
+						remote :{
+		            	    delay: 1000,
+		            	 	url: 'buscaPorNombreOrDniProveedor',
+		            	 	message: 'El Nombre ya existe'
+		             	}
+		            }
+		        },			
 				"dni" : {
 					selector : "#id_act_dni",
 					validators : {
@@ -486,9 +500,14 @@
 						regexp : {
 							regexp : /^[0-9]{8}$/,
 							message : 'el dni es 8 dígitos'
-						}
-					}
-				},
+						},
+						remote :{
+		            	    delay: 1000,
+		            	 	url: 'buscaPorNombreOrDniProveedor',
+		            	 	message: 'El DNI ya existe'
+		             	}
+		            }
+		        },
 				"tipo.idTipo" : {
 					selector : '#id_act_tipo',
 					validators : {

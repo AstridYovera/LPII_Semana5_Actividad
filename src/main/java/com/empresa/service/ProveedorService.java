@@ -12,5 +12,5 @@ public interface ProveedorService {
 	public abstract Proveedor actualizaProveedor(Proveedor obj);
 	public abstract List<Proveedor> listaPorNombreLike(String nombre);
 	public abstract Optional<Proveedor> buscaProveedor(int idProveedor);
-	
+	public abstract List<Proveedor> listaPorNombreOrDni(String nombre, String dni);
 }

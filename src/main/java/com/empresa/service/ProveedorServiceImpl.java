@@ -40,4 +40,9 @@ public class ProveedorServiceImpl implements ProveedorService{
 		return repository.findById(idProveedor);
 	}
 
+	@Override
+	public List<Proveedor> listaPorNombreOrDni(String nombre, String dni) {
+		return repository.findByNombreOrDniIgnoreCase(nombre, dni);
+	}
+
 }
